@@ -19,9 +19,6 @@ largest([1, 2, 25, 4, 99])
 # 3. Write a function named occurrences that takes two string arguments as input and counts the number of occurrences of the second string inside the first string.
 
 def occurences(string1, string2):
-  count = 0
-  if string1 in string2:
-    count += 1
-  print(count)
+  return string1.count(string2)
 
-occurences('fleep floop', 'e')
+print(occurences('fleep floop', 'fe'))
