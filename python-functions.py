@@ -21,4 +21,14 @@ largest([1, 2, 25, 4, 99])
 def occurences(string1, string2):
   return string1.count(string2)
 
-print(occurences('fleep floop', 'fe'))
+occurences('fleep floop', 'fe')
+
+# 4. Write a function named product that takes an arbitrary number of numbers, multiplies them all together, and returns the product. 
+
+def product(*args):
+  answer = 1
+  for arg in args:
+    answer *= arg
+  return answer
+
+product(4, 0.5, 5)
